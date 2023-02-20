@@ -926,7 +926,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('✇ Bᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data='start')
+                    InlineKeyboardButton('✇ Bᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data='home')
                 ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -943,7 +943,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(MSG_ALRT)
         
     elif query.data == "home":
-        buttons = [[
+        btn = [[
             InlineKeyboardButton('📱 Mᴇɴᴜ 📱', callback_data='start')
         ],[
             InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)  
@@ -951,23 +951,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
         ],[
             InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
-            ]]
+        ]]
+
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
-            text="🔴 ⚪️ ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 🟢"
-        )       
-        reply_markup=InlineKeyboardMarkup(btn)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
@@ -1055,15 +1046,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
-            text="🔴 ⚪️ ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 🟢"
-        )       
         await query.message.edit_text(
             text=script.ALL_FILTERS.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -1362,15 +1344,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
-            text="🔴 ⚪️ ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 🟢"
-        )       
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ADMIN_TXT,
@@ -1387,15 +1360,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
-            text="🔴 ⚪️ ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 🟢"
-        )       
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
         users = await db.total_users_count()
@@ -1420,15 +1384,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
-            text="🔴 ⚪️ ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 ⚪️"
-        )
-        await query.message.edit_text(
-            text="🔴 🟡 🟢"
-        )       
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
         users = await db.total_users_count()
