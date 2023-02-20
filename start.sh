@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Zoro-The-File-Donor
 fi
-cd /Zoro-0The-File-Donor
+cd /Zoro-The-File-Donor
 pip3 install -U -r requirements.txt
 echo "Starting Zoro...."
 python3 bot.py
