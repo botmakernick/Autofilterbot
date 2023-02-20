@@ -564,9 +564,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
-                            [
-                             [
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
+                            [[
+                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")
+                            ],[
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+                             ],[
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+                             ],[
+                                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                              ]
                             ]
                         )
@@ -609,11 +614,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
-                 ]
-                ]
+                [[
+                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")
+                            ],[
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+                             ],[
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+                             ],[
+                                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
+                             ]
+                            ]
             )
         )
     elif query.data == "pages":
@@ -916,7 +926,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('✇ Bᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data="home")
+                    InlineKeyboardButton('✇ Bᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data='home')
                 ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1080,6 +1090,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/BLVCK-ANGEL/Zoro-the-file-donor'),
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
