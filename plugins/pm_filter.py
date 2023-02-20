@@ -565,13 +565,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
                             [[
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)
-                            ],[
+                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
                               InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
-                             ],[
+                            ],[
                                  InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
-                             ],[
-                                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                              ]
                             ]
                         )
@@ -615,13 +612,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)
-                            ],[
+                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
                               InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
-                             ],[
+                            ],[
                                  InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
-                             ],[
-                                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                              ]
                             ]
             )

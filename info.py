@@ -50,10 +50,10 @@ BOT_TOKEN = environ['BOT_TOKEN']
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Welcome area
-PICS = (environ.get('PICS', 'https://telegra.ph/file/6a0726f79acd8300e9a04.jpg https://telegra.ph/file/68289fefb76dbc43b766d.jpg https://telegra.ph/file/0caad29c0cf91c23fb1b6.jpg https://telegra.ph/file/8c34c755dd16581c1c6b5.jpg https://telegra.ph/file/365e35b554e5a3ea83857.jpg https://telegra.ph/file/07f185825c5b7bfd6fbfb.jpg https://telegra.ph/file/85f95494565a762edb3e7.jpg https://telegra.ph/file/708a1d6ce805fcc6a46d0.jpg https://telegra.ph/file/d799c1a964f211028cc97.jpg https://telegra.ph/file/b987425b80bca0cf45c7e.jpg https://telegra.ph/file/2a8b3779760289b76de24.jpg https://telegra.ph/file/47961be968719b3e24cf0.jpg https://telegra.ph/file/2e127b0f6b1810d733c09.jpg https://telegra.ph/file/281b18770a43a29120252.jpg https://telegra.ph/file/2086dd2aa8382e758a599.jpg https://telegra.ph/file/fcc849db4bf5c517f0f8d.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/e44fb77dad61d88fa77bd.png https://telegra.ph/file/8838f1c74bcc1a2d464e9.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/58a8b06c059e194977fcf.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -97,8 +97,8 @@ PORT = environ.get("PORT", "8080")
 S_GROUP = environ.get('S_GROUP',"")
 GIT_LNK = environ.get('GIT_LNK', 'https://github.com/BLVCK-ANGEL')
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mvie_max')
-ANI_LNK = environ.get('ANI_LNK', 'https://t.me/mvie_max')
-SER_LNK = environ.get('SER_LNK', 'https://t.me/mvie_max')
+ANI_LNK = environ.get('ANI_LNK', 'https://t.me/mviemax_anime')
+SER_LNK = environ.get('SER_LNK', 'https://t.me/mviemax_series')
 CHNL_LNK = environ.get('CHNL_LNK', '')
 MSG_ALRT = environ.get('MSG_ALRT', '⚠️ ᴘɪʀᴀᴄʏ ɪs ᴄʀɪᴍᴇ ⚠️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
@@ -113,7 +113,7 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
+MAX_LIST_ELM = environ.get("MAX_LIST_ELM", 4)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
