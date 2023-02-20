@@ -566,10 +566,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                           ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                              ]
                             ]
                         )
@@ -614,10 +611,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                  ]
                 ]
             )
@@ -1067,7 +1061,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+        
             InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
         ],[
             InlineKeyboardButton('📲 ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ', callback_data='start'),
@@ -1395,7 +1389,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/creatorbeatz")
+                    InlineKeyboardButton("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url='source')
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
