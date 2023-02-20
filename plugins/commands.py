@@ -8,7 +8,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, REQST_CHANNEL, SUPPORT_CHAT_ID, MAX_B_TN, VERIFY
+from info import SER_LNK,ANI_LNK,CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, REQST_CHANNEL, SUPPORT_CHAT_ID, MAX_B_TN, VERIFY
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token
 from database.connections_mdb import active_connection
 import re
@@ -28,7 +28,7 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                 ],[
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('✇ Bᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data="home")
+                    InlineKeyboardButton('✇ Bᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data='home')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -45,11 +45,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('📱 Mᴇɴᴜ 📱', callback_data='start')
         ],[
-            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")  
+            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)  
         ],[
-            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
         ],[
-            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -91,11 +91,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('📱 Mᴇɴᴜ 📱', callback_data='start')
         ],[
-            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")  
+            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)  
         ],[
-            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
         ],[
-            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(

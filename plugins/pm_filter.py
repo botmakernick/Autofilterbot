@@ -11,7 +11,7 @@ from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_CAPTION, MSG_ALRT, PICS, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, NOR_IMG, LOG_CHANNEL, SPELL_IMG, MAX_B_TN, IMDB, \
+from info import SER_LNK,ANI_LNK,ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_CAPTION, MSG_ALRT, PICS, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, NOR_IMG, LOG_CHANNEL, SPELL_IMG, MAX_B_TN, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, NO_RESULTS_MSG
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram import Client, filters, enums
@@ -565,11 +565,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
                             [[
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")
+                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)
                             ],[
-                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
                              ],[
-                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
                              ],[
                                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                              ]
@@ -615,11 +615,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")
+                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)
                             ],[
-                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
                              ],[
-                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
                              ],[
                                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", callback_data="owner_info")
                              ]
@@ -946,11 +946,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         btn = [[
             InlineKeyboardButton('📱 Mᴇɴᴜ 📱', callback_data='start')
         ],[
-            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url="t.me/MoviesNSeriesSNS")  
+            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)  
         ],[
-            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
         ],[
-            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
