@@ -6,8 +6,8 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/DQ_The_File_Donor_Updates'>Jᴏᴇʟ Kᴜʀɪᴀɴ Bɪᴊᴜ</a>
-✯ 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾: Jᴏᴇʟ ᠰ TɢX
+✯ Cʀᴇᴀᴛᴏʀ: AɴᴏɴʏᴍᴏᴜS
+✯ Tʜᴀɴᴋs ᴛᴏ: <a href='https://t.me/DQ_The_File_Donor_Updates'>Jᴏᴇʟ Kᴜʀɪᴀɴ Bɪᴊᴜ</a>
 ✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
 ✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
@@ -74,30 +74,44 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /imdb  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.</code>
 • /search  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.</code>"""
     
-    SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+    SONG_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>Sᴏɴɢ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴅᴜʟᴇ</b>
+ - Fᴏʀ Tʜᴏsᴇ Wʜᴏ Lᴏᴠᴇs Sᴏɴɢs.Yᴏᴜ Cᴀɴ Usᴇ Tʜɪs Fᴇᴀᴛᴜʀᴇ Fᴏʀ Dᴏᴡɴʟᴏᴀᴅ Aɴʏ Sᴏɴɢs...
+<b>ɴᴏᴛᴇ:</b>
+1. Wᴏʀᴋs Oɴ Bᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘs
+2. Sᴇɴᴅ <code>/song</code> ᴡɪᴛʜ sᴏɴɢ ɴᴀᴍᴇ
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+• /song  - <code>ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ sᴏɴɢs</code>"""
 
-<i>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</i>
-
-<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
-
-⏭️ /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
-
-<b>𝚆𝙾𝚁𝙺𝚂 𝙱𝙾𝚃𝙷 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙿𝙼</b>
-🇮🇳 𝐓𝐄𝐀𝐌 𝐒𝐍𝐒 🇮🇳"""
-
-    VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
-• 𝘜𝘴𝘢𝘨𝘦
-𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
-𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/example...)
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+    VIDEO_TXT ="""Fᴇᴀᴛᴜʀᴇs: <b>Dᴏᴡɴʟᴏᴀᴅ Vɪᴅᴇᴏ Fʀᴏᴍ Yᴏᴜᴛᴜʙᴇ</b>
+- Yᴏᴜ Cᴀɴ Dᴏᴡɴʟᴏᴀᴅ Aɴʏ Vɪᴅᴇᴏ Fʀᴏᴍ Yᴏᴜᴛᴜʙᴇ
+<b>ɴᴏᴛᴇ:</b>
+2. Sᴇɴᴅ <code>/video</code>ᴏʀ<code>/mp4</code> ᴡɪᴛʜ ʟɪɴᴋ
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+• Tʏᴘᴇ /video ᴏʀ /mp4 Aɴᴅ (https://youtu.be/example...)
+• Exᴀᴍᴘʟᴇ:
 <code>/mp4 https://youtu.be/example...</code>
 <code>/video https://youtu.be/example...</code>"""
 
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
-Translate text to speech
-<b>Commands and Usage:</b>
-• /tts <text> : convert text to speech"""
+    TTS_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>Tᴛs</b>
+<b>ɴᴏᴛᴇ:</b>
+ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+• /tts <text> : Cᴏɴᴠᴇʀᴛ Tᴇxᴛ ᴛᴏ Sᴘᴇᴇᴄʜ"""
+    
+    ABOOK_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>Aᴜᴅɪᴏ Bᴏᴏᴋ</b>
+- ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀ ᴘᴅғ ғɪʟᴇ ᴛᴏ ᴀ ᴀᴜᴅɪᴏ ғɪʟᴇ ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+• /audiobook - ʀᴇᴘʟʏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀɴʏ ᴘᴅғ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴇ ᴀᴜᴅɪᴏ"""
+    
+    PINGS_TXT = """<b>Pɪɴɢ Tᴇsᴛɪɴɢ:</b>
+- ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜʀ ᴘɪɴɢ 
+<b>ɴᴏᴛᴇ:</b>
+1. Wᴏʀᴋs Oɴ Bᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘs
+2. ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+• /alive - ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜ ᴀʀᴇ ᴀʟɪᴠᴇ.
+• /help - ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ.
+• /ping - ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴘɪɴɢ."""
     
     TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
 Do as you wish with telegra.ph module!
@@ -107,25 +121,7 @@ Do as you wish with telegra.ph module!
 • This Command Is Available in goups and pms
 • This Command Can be used by everyone"""
     
-    ABOOK_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖠𝗎𝖽𝗂𝗈𝖻𝗈𝗈𝗄
-𝚈𝚘𝚞 𝚌𝚊𝚗 𝚌𝚘𝚗𝚟𝚎𝚛𝚝 𝚊 𝙿𝙳𝙵 𝚏𝚒𝚕𝚎 𝚝𝚘 𝚊 𝚊𝚞𝚍𝚒𝚘 𝚏𝚒𝚕𝚎 𝚠𝚒𝚝𝚑 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 ✯
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
-➪ /audiobook: 𝖱𝖾𝗉𝗅𝗒 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗍𝗈 𝖺𝗇𝗒 𝖯𝖣𝖥 𝗍𝗈 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝗍𝗁𝖾 𝖺𝗎𝖽𝗂𝗈"""
-
-
-    PINGS_TXT = """<b>Ping Testing:</b>
-Helps you to know your ping 🚶🏼‍♂️
-<b>Commands:</b>
-• /alive - To check you are alive.
-• /help - To get help.
-
-• /ping - <b>To get your ping.</b>
-
-<b>🛠️Usage🛠️ :</b>
-• This commands can be used in pm and groups
-• This commands can be used buy everyone in the groups and bots pm
-• Share us for more features"""
-
+    
     JSON_TXT = """<b>JSON:</b>
 Bot returns json for all replied messages with /json or /js
 <b>Features:</b>
@@ -225,9 +221,7 @@ Nᴀᴍᴇ - {}"""
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴊᴏᴇʟ ᴋᴜʀɪᴀɴ ʙɪᴊᴜ
-• ᴜꜱᴇʀɴᴀᴍᴇ : @creatorbeatz
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/creatorbeatz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+• ꜰᴜʟʟ ɴᴀᴍᴇ :  AɴᴏɴʏᴍᴏᴜS """
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
@@ -265,29 +259,40 @@ Nᴀᴍᴇ - {}"""
 
 𝗡𝗮𝗺𝗲 <b>: {}</b>
 
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>
+ 
+Movie Name : {title}
+
+NOT RELEASED YET 
+
+RELEASE DATE:{release_date}"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
 
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
 <b>
 ╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
+🔅 Rᴇᴛʀᴏ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/Retrov2">Aᴘᴘʟʏ</a>       🔅
 ╰─────── • ◆ • ───────╯
-
 =========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
+▫️ ᴇɴᴊᴏʏ ᴛʜᴇ Cɪɴᴇᴍᴀ ᴏʀ Sᴇʀɪᴇꜱ
+▫️ ʙᴇғᴏʀᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴʏ ғɪʟᴇs 
+  ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ sᴀᴍᴘʟᴇ ᴠɪᴅᴇᴏs..
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
-IMDb Data:
+IMDb Data:</b>
 
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+🏷 𝚃𝚒𝚝𝚕𝚎: <a href={url}>{title}</a>
+🎭 𝙶𝚎𝚗𝚛𝚎𝚜: {genres}
+📆 𝚈𝚎𝚊𝚛: <a href={url}/releaseinfo>{year}</a>
+🌟 𝚁𝚊𝚝𝚒𝚗𝚐: <a href={url}/ratings>{rating}</a> / 10
+🎙️ 𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜: <code>{languages}</code>
+🎭 𝙲𝚊𝚜𝚝: {cast}      
+🌐 𝙲𝚘𝚞𝚗𝚝𝚛𝚒𝚎𝚜: <code>{countries}</code>
+
+🗣 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗕𝘆: <b>{msg.from_user.mention}</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
@@ -320,9 +325,5 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     LOGO = """
 
-██████╗░░██████╗░░░░░░░████████╗██╗░░██╗███████╗░░░░░░███████╗██╗██╗░░░░░███████╗░░░░░░██████╗░░█████╗░███╗░░██╗░█████╗░██████╗░
-██╔══██╗██╔═══██╗░░░░░░╚══██╔══╝██║░░██║██╔════╝░░░░░░██╔════╝██║██║░░░░░██╔════╝░░░░░░██╔══██╗██╔══██╗████╗░██║██╔══██╗██╔══██╗
-██║░░██║██║██╗██║█████╗░░░██║░░░███████║█████╗░░█████╗█████╗░░██║██║░░░░░█████╗░░█████╗██║░░██║██║░░██║██╔██╗██║██║░░██║██████╔╝
-██║░░██║╚██████╔╝╚════╝░░░██║░░░██╔══██║██╔══╝░░╚════╝██╔══╝░░██║██║░░░░░██╔══╝░░╚════╝██║░░██║██║░░██║██║╚████║██║░░██║██╔══██╗
-██████╔╝░╚═██╔═╝░░░░░░░░░░██║░░░██║░░██║███████╗░░░░░░██║░░░░░██║███████╗███████╗░░░░░░██████╔╝╚█████╔╝██║░╚███║╚█████╔╝██║░░██║
-╚═════╝░░░░╚═╝░░░░░░░░░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░░░░░░╚═╝░░░░░╚═╝╚══════╝╚══════╝░░░░░░╚═════╝░░╚════╝░╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝"""
+                                                                     █▄▄ █▄█   █▄▄ █░░ █░█ █▀▀ █▄▀   ▄▀█ █▄░█ █▀▀ █▀▀ █░░
+                                                                     █▄█ ░█░   █▄█ █▄▄ ▀▄▀ █▄▄ █░█   █▀█ █░▀█ █▄█ ██▄ █▄▄"""
