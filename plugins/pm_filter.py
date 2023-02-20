@@ -912,6 +912,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "sinfo":
         await query.answer(text=script.SINFO, show_alert=True)
+        
     elif query.data == "surprise":
         btn = [[
             InlineKeyboardButton('MENU', callback_data='start')
@@ -941,7 +942,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✇ ʙᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data='surprise')
+                    InlineKeyboardButton('✇ ʙᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ ✇', callback_data="surprise")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)

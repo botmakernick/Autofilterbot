@@ -46,16 +46,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
-                    
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            InlineKeyboardButton('MENU', callback_data='start')
+        ],[
+            InlineKeyboardButton('✇ FILM ✇', url="t.me/MoviesNSeriesSNS")
+        ],[
+            InlineKeyboardButton('✇ WEB SERIES  ✇', url="t.me/MoviesNSeriesSNS")
+        ],[
+            InlineKeyboardButton('✇ ANIME SERIES ✇', url="t.me/MoviesNSeriesSNS")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -95,9 +92,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', callback_data='start')
+            InlineKeyboardButton('MENU', callback_data='start')
         ],[
-            InlineKeyboardButton('✇ 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ✇', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('✇ FILM ✇', url="t.me/MoviesNSeriesSNS")
+        ],[
+            InlineKeyboardButton('✇ WEB SERIES  ✇', url="t.me/MoviesNSeriesSNS")
+        ],[
+            InlineKeyboardButton('✇ ANIME SERIES ✇', url="t.me/MoviesNSeriesSNS")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
