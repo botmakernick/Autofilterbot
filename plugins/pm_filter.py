@@ -690,7 +690,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ShortLink',
+                    InlineKeyboardButton('Sʜᴏʀᴛ Lɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✔ Oɴ' if settings["is_shortlink"] else '✘ Oғғ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
@@ -996,16 +996,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "aswin":
         buttons = [[
-             InlineKeyboardButton('ᴀᴜᴅɪᴏ ʙᴏᴏᴋ', callback_data='abook'),
              InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
-            InlineKeyboardButton('ᴛᴛs', callback_data='tts')
-         ], [
+             InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video')          
+         ],[
+             InlineKeyboardButton('ᴀᴜᴅɪᴏ ʙᴏᴏᴋ', callback_data='abook'),
+             InlineKeyboardButton('ᴛᴛs', callback_data='tts')
+             ],[
              InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
              InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
-             InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video')
-         ], [
-             InlineKeyboardButton('ᴡʜᴏ ɪs', callback_data='whois'),
-             InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
+             ], [
+            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
             InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
         ], [
             InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='help')         
@@ -1266,21 +1266,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "whois":
-        buttons = [[
-            InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='aswin')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.WHOIS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')

@@ -29,6 +29,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
 2. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ.
 3. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏꜰ 64 ᴄʜᴀʀᴀᴄᴛᴇʀꜱ.
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /filter - <code>ᴀᴅᴅ ᴀ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ</code>
 • /filters - <code>ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ</code>
@@ -63,6 +64,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 <b>ɴᴏᴛᴇ:</b>
 1. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
 2. ꜱᴇɴᴅ <code>/ᴄᴏɴɴᴇᴄᴛ</code> ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /connect  - <code>ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ</code>
 • /disconnect  - <code>ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ</code>
@@ -71,9 +73,9 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</code>
-•/whois - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</code>
 • /info  - <code>ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.</code>
 • /imdb  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.</code>
 • /search  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.</code>"""
@@ -83,6 +85,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 <b>ɴᴏᴛᴇ:</b>
 1. Wᴏʀᴋs Oɴ Bᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘs
 2. Sᴇɴᴅ <code>/song</code> ᴡɪᴛʜ sᴏɴɢ ɴᴀᴍᴇ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /song  - <code>ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ sᴏɴɢs</code>"""
 
@@ -90,6 +93,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 - Yᴏᴜ Cᴀɴ Dᴏᴡɴʟᴏᴀᴅ Aɴʏ Vɪᴅᴇᴏ Fʀᴏᴍ Yᴏᴜᴛᴜʙᴇ
 <b>ɴᴏᴛᴇ:</b>
 2. Sᴇɴᴅ <code>/video</code>ᴏʀ<code>/mp4</code> ᴡɪᴛʜ ʟɪɴᴋ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • Tʏᴘᴇ /video ᴏʀ /mp4 Aɴᴅ (https://youtu.be/example...)
 • Exᴀᴍᴘʟᴇ:
@@ -99,11 +103,13 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     TTS_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>Tᴛs</b>
 <b>ɴᴏᴛᴇ:</b>
 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /tts <text> : Cᴏɴᴠᴇʀᴛ Tᴇxᴛ ᴛᴏ Sᴘᴇᴇᴄʜ"""
     
     ABOOK_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>Aᴜᴅɪᴏ Bᴏᴏᴋ</b>
 - ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ᴀ ᴘᴅғ ғɪʟᴇ ᴛᴏ ᴀ ᴀᴜᴅɪᴏ ғɪʟᴇ ᴡɪᴛʜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /audiobook - ʀᴇᴘʟʏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴀɴʏ ᴘᴅғ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴛʜᴇ ᴀᴜᴅɪᴏ"""
     
@@ -112,39 +118,39 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 <b>ɴᴏᴛᴇ:</b>
 1. Wᴏʀᴋs Oɴ Bᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘs
 2. ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ
+
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /alive - ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜ ᴀʀᴇ ᴀʟɪᴠᴇ.
-• /help - ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ.
 • /ping - ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴘɪɴɢ."""
     
-    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
-Do as you wish with telegra.ph module!
-</b>USAGE:</b>
-✒️ /telegraph - Send me Picture or Vide Under (5MB)
-<b>NOTE:</b>
-• This Command Is Available in goups and pms
-• This Command Can be used by everyone"""
+    TELE_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>ᴛᴇʟᴇɢʀᴀᴘʜ</b>
+ᴅᴏ ᴀs ʏᴏᴜ ᴡɪsʜ ᴡɪᴛʜ ᴛᴇʟᴇɢʀᴀ.ᴘʜ ᴍᴏᴅᴜʟᴇ!
+<b>ɴᴏᴛᴇ:</b>
+1. Wᴏʀᴋs Oɴ Bᴏᴛʜ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘs
+2. ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ
+
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+• /telegraph - sᴇɴᴅ ᴍᴇ ɪᴍᴀɢᴇ ᴏʀ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 𝟻ᴍʙ"""
     
     
-    JSON_TXT = """<b>JSON:</b>
-Bot returns json for all replied messages with /json or /js
-<b>Features:</b>
-Message Editting JSON
-Pm Support
-Group Support
-<b>Note:</b>
-<b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
+    JSON_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>ᴊsᴏɴ</b>
+ʙᴏᴛ ʀᴇᴛᴜʀɴs ᴊsᴏɴ ғᴏʀ ᴀʟʟ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇs ᴡɪᴛʜ /ᴊsᴏɴ ᴏʀ /ᴊs
+<b>ɴᴏᴛᴇ:</b>
+1. ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ʙʏ ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ
+2. <b>ɪғ sᴘᴀᴍᴍɪɴɢ ʜᴀᴘᴘᴇɴ ʙᴏᴛ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ʙᴀɴ ʏᴏᴜ ғʀᴏᴍ ɢʀᴏᴜᴘ</b>
 
-    WHOIS_TXT ="""<b>WHOIS MODULE</b>
-Note:- <b>Give a user details</b>
+<b>Fᴇᴀᴛᴜʀᴇs</b>
+• Mᴇssᴀɢᴇ ᴇᴅɪᴛᴛɪɴɢ ᴊsᴏɴ 
+• Pᴍ sᴜᴘᴘᴏʀᴛ
+• Gʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ
+"""
 
-•/whois :-give a user full details 📑"""
+    URLSHORT_TXT = """Fᴇᴀᴛᴜʀᴇs: <b>Uʀʟ Sʜᴏʀᴛɴᴇʀ </b>
+ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ sʜᴏʀᴛ ᴀ ᴜʀʟ
 
-    URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
-<i><b>𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 </i></b>
-➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
-➪ /short: <b>𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌</b>
-➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
+/short - <b>Usᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɢᴇᴛ sʜᴏʀᴛᴇᴅ ʟɪɴᴋs</b>
+ᴇxᴀᴍᴘʟᴇ:
 <code>/short https://youtu.be/example...</code>"""
     
     

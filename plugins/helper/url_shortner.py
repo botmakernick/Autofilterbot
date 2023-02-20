@@ -12,14 +12,14 @@ GPLINKS_API = os.environ.get("GPLINKS_API", "b0df7543c448e702acb4b8a8f66b588c03a
 
 reply_markup = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton("𝘊𝘭𝘰𝘴𝘦", callback_data='close_data')
+        InlineKeyboardButton("Cʟᴏsᴇ", callback_data='close_data')
         ]]
     )
 
 @Client.on_message(filters.command(["short"]) & filters.regex(r'https?://[^\s]+'))
 async def reply_shortens(bot, update):
     message = await update.reply_text(
-        text="`Analysing your link...`",
+        text="`ᴀɴᴀʟʏsɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ...`",
         disable_web_page_preview=True,
         quote=True
     )
