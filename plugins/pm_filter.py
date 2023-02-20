@@ -914,9 +914,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.SINFO, show_alert=True)
     elif query.data == "surprise":
         btn = [[
-            InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', callback_data='start')
+            InlineKeyboardButton('MENU', callback_data='start')
         ],[
-            InlineKeyboardButton('✇ 𝐌𝐀𝐈𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ✇', url="t.me/MoviesNSeriesSNS")
+            InlineKeyboardButton('✇ FILMS  ✇', url="t.me/MoviesNSeriesSNS")
+                  ]
+        ,[
+            InlineKeyboardButton('✇ WEB SERIES  ✇', url="t.me/MoviesNSeriesSNS")
+                  ],
+        [
+            InlineKeyboardButton('✇ ANIME SERIES ✇', url="t.me/MoviesNSeriesSNS")
                   ]]
         reply_markup=InlineKeyboardMarkup(btn)
         await query.message.edit_text(
@@ -953,7 +959,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('FEATURES', callback_data='aswins')
+            InlineKeyboardButton('FEATURES', callback_data='aswin')
         ],[
             InlineKeyboardButton('FIʟᴛᴇʀs', callback_data='filters'),
             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
