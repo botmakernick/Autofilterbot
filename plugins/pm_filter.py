@@ -918,13 +918,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('MENU', callback_data='start')
         ],[
             InlineKeyboardButton('✇ FILMS  ✇', url="t.me/MoviesNSeriesSNS")
-                  ]
-        ,[
+        ],[
             InlineKeyboardButton('✇ WEB SERIES  ✇', url="t.me/MoviesNSeriesSNS")
-                  ],
-        [
+        ],[
             InlineKeyboardButton('✇ ANIME SERIES ✇', url="t.me/MoviesNSeriesSNS")
-                  ]]
+            ]]
         reply_markup=InlineKeyboardMarkup(btn)
         await query.message.edit_text(
             text=script.SUR_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -936,8 +934,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info")
+                    
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
@@ -1143,7 +1141,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "song":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1158,7 +1156,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "video":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1173,7 +1171,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "tts":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1188,7 +1186,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "tele":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1234,7 +1232,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "json":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
