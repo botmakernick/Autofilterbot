@@ -250,6 +250,9 @@ Nᴀᴍᴇ - {}"""
 ᴇxᴀᴍᴘʟᴇ : Uncharted
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)"""
+    
+     LINFO = """
+LANGUAGES = ["malayalam", "tamil", "english", "hindi", "telugu", "kannada"]"""
 
     SINFO = """
 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯
