@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/e44fb77dad61d88fa77bd.png" alt="Zoro-The-File-Donor Logo">
+  <img src="https://telegra.ph/file/8838f1c74bcc1a2d464e9.jpg" alt="Zoro-The-File-Donor Logo">
 </p>
 <h1 align="center">
   Zoro-The-File-Donor
