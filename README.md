@@ -162,7 +162,7 @@ python3 bot.py
 ## Credits 
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 * [![Joel-TGX](https://img.shields.io/static/v1?label=Jᴏᴇʟ+ᠰ+TɢX&message=Github&color=critical)](https://github.com/Joelkb)
-* [![BLVCK-ANGEL](https://img.shields.io/static/v1?label=BLVCK+-+&message=Github&color=critical)](https://github.com/BLVCK-ANGEL)
+* [![BLVCK-ANGEL](https://img.shields.io/static/v1?label=BLVCK+-+ANGEL&message=Github&color=critical)](https://github.com/BLVCK-ANGEL)
 
 
 ## Thanks to 
