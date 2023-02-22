@@ -3,7 +3,7 @@ import os
 from os import environ
 from Script import script 
 from pyrogram import enums
-from Script import script
+
 
 import asyncio
 import json
