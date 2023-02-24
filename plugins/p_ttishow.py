@@ -61,10 +61,12 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
-                                                                           InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK),
-                                                                           InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
-                                                                        ],[ InlineKeyboardButton('📜 Gʀᴏᴜᴘ Rᴜʟᴇs 📜', url=RLU_LNK)
+                                                                           InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK),
+                                                                           InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
+                                                                           
+                                                                        ],[ 
+                                                                             InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK),
+                                                                             InlineKeyboardButton('📜 Gʀᴏᴜᴘ Rᴜʟᴇs 📜', url=RLU_LNK)
                                                                           ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
