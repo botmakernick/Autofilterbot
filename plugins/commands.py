@@ -43,13 +43,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('📱 Mᴇɴᴜ 📱', callback_data='start')
+            InlineKeyboardButton('📱 Mᴇɴᴜ ', callback_data='start')
         ],[
-            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)  
+            InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK)  
         ],[
-            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
+            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
         ],[
-            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
+            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK)
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -89,13 +89,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('📱 Mᴇɴᴜ 📱', callback_data='start')
+            InlineKeyboardButton('📱 Mᴇɴᴜ ', callback_data='start')
         ],[
-            InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK)  
+            InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK)  
         ],[
-            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
+            InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
         ],[
-            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
+            InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK)
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -146,10 +146,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
-                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
+                              InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK),
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
                             ],[
-                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK)
                              ]
                         ]
                     )
@@ -165,10 +165,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
-                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
+                              InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK),
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
                             ],[
-                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK)
                              ]
                         ]
                     )
@@ -266,10 +266,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
-                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
+                              InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK),
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
                             ],[
-                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK)
                              ]
                     ]
                 )
@@ -319,10 +319,10 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-                              InlineKeyboardButton('📽 Fɪʟᴍs 📽', url=GRP_LNK),
-                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs 🎞', url=SER_LNK)
+                              InlineKeyboardButton('📽 Fɪʟᴍs ', url=GRP_LNK),
+                              InlineKeyboardButton('🎞 Wᴇʙ Sᴇʀɪᴇs ', url=SER_LNK)
                             ],[
-                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs 🎬', url=ANI_LNK)
+                                 InlineKeyboardButton('🎬 Aɴɪᴍᴇ Sᴇʀɪᴇs ', url=ANI_LNK)
                              ]
             ]
         )
@@ -588,7 +588,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'ShortLink',
+                    'Sʜᴏʀᴛ Lɪɴᴋ',
                     callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
