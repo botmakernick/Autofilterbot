@@ -62,11 +62,13 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>ᴊᴜsᴛ sᴇᴀʀᴄʜ ᴏɴ ɢʀᴏᴜᴘs ʙᴇᴄᴀᴜsᴇ ᴡᴇ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ!</b>")
+    await message.reply_text("<b>ᴊᴜsᴛ sᴇᴀʀᴄʜ ᴏɴ Mᴏᴠɪᴇ Mᴀx ɢʀᴏᴜᴘs !</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
+    await asyncio.sleep(10)
+    await k.delete()
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
