@@ -3,6 +3,7 @@ Syntax: .ping"""
 
 import time
 import random
+import asyncio
 from pyrogram import Client, filters
 from info import COMMAND_HAND_LER
 from plugins.helper_functions.cust_p_filters import f_onw_fliter
@@ -25,7 +26,7 @@ async def ping(_, message):
     time_taken_s = (end_t - start_t) * 1000
     await rm.edit(f"<b>Pong!\n{time_taken_s:.3f} ms</b>")
     await asyncio.sleep(10)
-    await k.delete()
+    await rm.delete()
 
 
 
