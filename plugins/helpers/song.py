@@ -61,8 +61,8 @@ async def song(client, message):
             "**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**"
         )
         print(str(e))
-       await asyncio.sleep(30)
-       await m.delete()
+        await asyncio.sleep(30)
+        await m.delete()
         return
     await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     try:
