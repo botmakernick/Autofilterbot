@@ -78,9 +78,10 @@ async def song(client, message):
        await asyncio.sleep(30)
        await message.delete()
     except Exception as e:
-        m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
-
+        await asyncio.sleep(10)
+        await m.delete()
     try:
         os.remove(audio_file)
         os.remove(thumb_name)
