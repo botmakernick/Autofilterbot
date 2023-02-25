@@ -37,7 +37,7 @@ async def song(client, message):
         query += ' ' + str(i)
     print(query)
     m =  await client.send_message(
-        message.chat.id, f"**Fɪɴᴅɪɴɢ ʏᴏᴜʀ song** "
+        message.chat.id, f"**Fɪɴᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ** "
     )
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
@@ -61,6 +61,8 @@ async def song(client, message):
             "**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**"
         )
         print(str(e))
+       await asyncio.sleep(30)
+       await m.delete()
         return
     await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     try:
@@ -76,7 +78,7 @@ async def song(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
        await asyncio.sleep(30)
-       await message.delete()
+       await audio_file.delete()
     except Exception as e:
         await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
