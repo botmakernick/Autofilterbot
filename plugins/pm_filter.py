@@ -56,7 +56,7 @@ async def give_filter(client, message):
                 await auto_filter(client, message) 
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
-async def pm_text(bot, message):
+async def pm_text(bot, message, i):
     content = message.text
     user = message.from_user.first_name
     user_id = message.from_user.id
@@ -68,7 +68,7 @@ async def pm_text(bot, message):
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
     await asyncio.sleep(10)
-    await k.delete()
+    await i.delete()
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
