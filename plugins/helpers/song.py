@@ -73,6 +73,8 @@ def song(client, message):
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
+        await asyncio.sleep(1000)
+        await message.delete()
     except Exception as e:
         m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
@@ -152,6 +154,7 @@ async def vsong(client, message: Message):
         reply_to_message_id=message.id 
     )
     await pablo.delete()
+    
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
