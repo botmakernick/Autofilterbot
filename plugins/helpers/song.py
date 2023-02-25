@@ -26,7 +26,7 @@ def time_to_seconds(time):
 
 
 @Client.on_message(filters.command('song'))
-async def song(client, message):
+def song(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -73,8 +73,8 @@ async def song(client, message):
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
-        await asyncio.sleep(30)
-        await message.delete()
+        asyncio.sleep(30)
+        message.delete()
     except Exception as e:
         m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
