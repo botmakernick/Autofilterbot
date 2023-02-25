@@ -26,7 +26,7 @@ def time_to_seconds(time):
 
 
 @Client.on_message(filters.command('song'))
-def song(client, message):
+async def song(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -36,7 +36,9 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("**Sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜ sᴏɴɢ...!**")
+    m =  await client.send_message(
+        message.chat.id, f"**Fɪɴᴅɪɴɢ ʏᴏᴜʀ song** "
+    )
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -55,12 +57,12 @@ def song(client, message):
         views = results[0]["views"]
 
     except Exception as e:
-        m.edit(
+      await m.edit(
             "**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**"
         )
         print(str(e))
         return
-    m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
+    await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -73,8 +75,8 @@ def song(client, message):
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
-        asyncio.sleep(30)
-        message.delete()
+       await asyncio.sleep(30)
+       await message.delete()
     except Exception as e:
         m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
