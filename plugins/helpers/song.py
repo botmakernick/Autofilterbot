@@ -57,12 +57,8 @@ async def song(client, message):
         views = results[0]["views"]
 
     except Exception as e:
-        await m.edit(
-            "**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**"
-        )
+        await m.edit("**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**")
         print(str(e))
-        await asyncio.sleep(30)
-        await m.delete()
         return
     await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     try:
