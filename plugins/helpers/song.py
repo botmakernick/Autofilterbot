@@ -73,7 +73,7 @@ async def song(client, message):
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
-        await asyncio.sleep(1000)
+        await asyncio.sleep(30)
         await message.delete()
     except Exception as e:
         m.edit("**🚫 Eʀʀᴏʀ 🚫**")
