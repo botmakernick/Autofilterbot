@@ -59,7 +59,7 @@ async def song(client, message):
         await m.edit("**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**")
         print(str(e))
         return
-    m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
+        await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -76,7 +76,7 @@ async def song(client, message):
         m.delete()
         
     except Exception as e:
-        m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
         await asyncio.sleep(10)
         await m.delete()
