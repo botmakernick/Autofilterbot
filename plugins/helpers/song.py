@@ -37,9 +37,9 @@ async def song(client, message):
         query += ' ' + str(i)
     print(query)
     m =  await client.send_message(
-        message.chat.id, f"**Fɪɴᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ** "
-    )
+        message.chat.id, f"**Fɪɴᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ** ")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
+   
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
@@ -73,8 +73,7 @@ async def song(client, message):
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
-        await asyncio.sleep(30)
-        await audio_file.delete()
+        
     except Exception as e:
         await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
