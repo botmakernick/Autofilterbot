@@ -59,7 +59,7 @@ async def song(client, message):
         await m.edit("**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**")
         print(str(e))
         return
-    await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
+    m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -73,10 +73,10 @@ async def song(client, message):
             secmul *= 60
        
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
-        await m.delete()
+        m.delete()
         
     except Exception as e:
-        await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
         await asyncio.sleep(10)
         await m.delete()
