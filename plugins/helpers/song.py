@@ -36,7 +36,8 @@ async def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("**Sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ Sᴏɴɢ...!**")
+    m = await client.send_message(
+        message.chat.id, f"**Sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ Sᴏɴɢ...!** ")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
