@@ -11,7 +11,7 @@ import time
 import wget
 import aiofiles
 
-from pyrogram import filters, Client
+from pyrogram import filters, Client, enums
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
 from youtube_search import YoutubeSearch
@@ -25,7 +25,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command('song') & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command('song'))
 def song(client, message):
 
     user_id = message.from_user.id 
@@ -49,7 +49,7 @@ def song(client, message):
         open(thumb_name, 'wb').write(thumb.content)
 
 
-        performer = f"[ᗩᒍᗩ᙭]" 
+        performer = f"[🇮🇳 𝐓𝐄𝐀𝐌 𝐒𝐍𝐒 🇮🇳]" 
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
@@ -66,7 +66,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ›› [𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉](https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA)**\n**𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [muѕíc вσч](https://t.me/OPMusicBoy_Bot)**'
+        rep = '**𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ›› [🍁𝐂𝐇𝐀𝐍𝐍𝐄𝐋🍁](https://t.me/MoviesNSeriesSNS2)**\n**♔ Oᗯᑎᗴᖇ ♔ ›› [✪ 𝐓𝐄𝐀𝐌 𝐒𝐍𝐒 ✪](https://t.me/ABOUT_SNS)**\n\n🇮🇳 𝐓𝐄𝐀𝐌 𝐒𝐍𝐒 🇮🇳**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -140,6 +140,7 @@ async def vsong(client, message: Message):
     capy = f"""
 **𝚃𝙸𝚃𝙻𝙴 :** [{thum}]({mo})
 **𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 :** {message.from_user.mention}
+**🇮🇳 𝐓𝐄𝐀𝐌 𝐒𝐍𝐒 🇮🇳**
 """
     await client.send_video(
         message.chat.id,
@@ -149,10 +150,9 @@ async def vsong(client, message: Message):
         thumb=sedlyf,
         caption=capy,
         supports_streaming=True,        
-        reply_to_message_id=message.message_id 
+        reply_to_message_id=message.id 
     )
     await pablo.delete()
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
-
