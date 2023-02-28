@@ -31,14 +31,14 @@ async def song(client, message):
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
     rpk = "["+user_name+"](tg://user?id="+str(user_id)+")"
-
+    
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
     m = message.reply("**Sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜ sᴏɴɢ...!**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
-   
+    
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
@@ -54,12 +54,14 @@ async def song(client, message):
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
-
+         
     except Exception as e:
-        await m.edit("**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**")
+        m.edit(
+            "**ғᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ ᴘʟᴇᴀsᴇ ᴄᴏʀʀᴇᴄᴛ ᴛʜᴇ sᴘᴇʟʟɪɴɢ ᴏʀ sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ sᴏɴɢ**"
+        )
         print(str(e))
         return
-        await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
+    m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -71,21 +73,22 @@ async def song(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-       
+            
         message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
-        
+        await asyncio.sleep(1000)
+        await message.delete()
     except Exception as e:
-        await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
-        await asyncio.sleep(10)
-        await m.delete()
+        
     try:
         os.remove(audio_file)
         os.remove(thumb_name)
+        
     except Exception as e:
         print(e)
-
+    awaitasyncio.sleep(1000)
 def get_text(message: Message) -> [None,str]:
     text_to_return = message.text
     if message.text is None:
@@ -155,7 +158,6 @@ async def vsong(client, message: Message):
         reply_to_message_id=message.id 
     )
     await pablo.delete()
-    
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
