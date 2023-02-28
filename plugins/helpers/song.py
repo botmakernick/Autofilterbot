@@ -26,7 +26,7 @@ def time_to_seconds(time):
 
 
 @Client.on_message(filters.command('song'))
-def song(client, message):
+async def song(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -55,12 +55,12 @@ def song(client, message):
         views = results[0]["views"]
 
     except Exception as e:
-        m.edit(
+        await m.edit(
             "**Fᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ, Pʟᴇᴀsᴇ ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ᴏʀ Sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ Sᴏɴɢ**"
         )
         print(str(e))
         return
-    m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
+    await m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -74,7 +74,7 @@ def song(client, message):
         message.reply_audio(audio_file,parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        await m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         print(e)
 
     try:
