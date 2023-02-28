@@ -150,7 +150,7 @@ async def next_page(bot, query):
             btn.insert(0, 
                 
                 [
-                    InlineKeyboardButton(f'Lang', 'languages'),
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -160,7 +160,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Lang', 'languages'),
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -174,7 +174,7 @@ async def next_page(bot, query):
             btn.insert(0,
                 
                 [
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -184,7 +184,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -1573,7 +1573,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -1583,7 +1583,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -1596,7 +1596,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -1606,7 +1606,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"
+                    InlineKeyboardButton("Languages", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
