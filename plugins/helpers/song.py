@@ -55,9 +55,9 @@ def song(client, message):
         views = results[0]["views"]
 
     except Exception as e:
-        m.edit(
-            "**Fᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ, Pʟᴇᴀsᴇ ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ᴏʀ Sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ Sᴏɴɢ**"
-        )
+        m.edit("**Fᴏᴜɴᴅ ɴᴏᴛʜɪɴɢ, Pʟᴇᴀsᴇ ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴍɪsᴛᴀᴋᴇ ᴏʀ Sᴇᴀʀᴄʜ ᴀɴʏ ᴏᴛʜᴇʀ Sᴏɴɢ**")
+        time.sleep(10)
+        m.delete()
         print(str(e))
         return
     m.edit("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...!**")
@@ -73,8 +73,12 @@ def song(client, message):
             secmul *= 60
         message.reply_audio(audio_file,parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
+        time.sleep(35)
+        message.delete()
     except Exception as e:
         m.edit("**🚫 Eʀʀᴏʀ 🚫**")
+        time.sleep(10)
+        m.delete()
         print(e)
 
     try:
