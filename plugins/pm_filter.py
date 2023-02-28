@@ -150,7 +150,7 @@ async def next_page(bot, query):
             btn.insert(0, 
                 
                 [
-                    InlineKeyboardButton(f'LAng', 'languages'),
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -160,6 +160,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
                 [
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -173,7 +174,7 @@ async def next_page(bot, query):
             btn.insert(0,
                 
                 [
-                    InlineKeyboardButton(f'LAng', 'languages'),
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -183,6 +184,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
                 [
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -917,6 +919,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "sinfo":
         await query.answer(text=script.SINFO, show_alert=True)
+     
+    elif query.data == "languages":
+        await query.answer(text=script.LANGUAGES, show_alert=True)
     
        
     elif query.data == "start":
@@ -1568,7 +1573,8 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                   InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'Lang', 'languages'),
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -1577,6 +1583,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
@@ -1589,6 +1596,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -1598,6 +1606,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
+                    InlineKeyboardButton(f'Lang', 'languages'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
