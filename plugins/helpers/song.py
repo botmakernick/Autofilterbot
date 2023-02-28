@@ -74,7 +74,7 @@ def song(client, message):
         message.reply_audio(audio_file,parse_mode=enums.ParseMode.MARKDOWN,quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
         time.sleep(35)
-        audio_file.delete()
+        os.remove(audio_file)
     except Exception as e:
         m.edit("**🚫 Eʀʀᴏʀ 🚫**")
         time.sleep(10)
