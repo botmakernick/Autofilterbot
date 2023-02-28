@@ -148,7 +148,9 @@ async def next_page(bot, query):
     try:
         if settings['auto_delete']:
             btn.insert(0, 
+                
                 [
+                    InlineKeyboardButton(f'LAng', 'languages'),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
@@ -168,8 +170,10 @@ async def next_page(bot, query):
         await save_group_settings(grpid, 'auto_delete', True)
         settings = await get_settings(query.message.chat.id)
         if settings['auto_delete']:
-            btn.insert(0, 
+            btn.insert(0,
+                
                 [
+                    InlineKeyboardButton(f'LAng', 'languages'),
                     InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
                     InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
