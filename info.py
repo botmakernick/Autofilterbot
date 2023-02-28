@@ -102,7 +102,6 @@ ANI_LNK = environ.get('ANI_LNK', 'https://t.me/mviemax_anime')
 SER_LNK = environ.get('SER_LNK', 'https://t.me/mviemax_series')
 CHNL_LNK = environ.get('CHNL_LNK', '')
 MSG_ALRT = environ.get('MSG_ALRT', '⚠️ ᴘɪʀᴀᴄʏ ɪs ᴄʀɪᴍᴇ ⚠️')
-LANGUAGES = environ["malayalam", "tamil", "english", "hindi", "telugu", "kannada"]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
