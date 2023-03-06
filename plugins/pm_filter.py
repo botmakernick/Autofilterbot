@@ -56,18 +56,21 @@ async def give_filter(client, message):
                 await auto_filter(client, message) 
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
-async def pm_text(bot, message):
-    content = message.text
-    user = message.from_user.first_name
-    user_id = message.from_user.id
-    if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    if user_id in ADMINS: return # ignore admins
-    pm = await message.reply_text("<b>ᴊᴜsᴛ sᴇᴀʀᴄʜ ᴏɴ Mᴏᴠɪᴇ Mᴀx ɢʀᴏᴜᴘs !</b>")
-    await asyncio.sleep(10)
-    await pm.delete()
-    await bot.send_message(
-        chat_id=LOG_CHANNEL,
-        text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
+async def give_filter(client, message):
+    if message.chat.id != SUPPORT_CHAT_ID:
+        await global_filters(client, message)
+    manual = await manual_filters(client, message)
+    if manual == False:
+        settings = await get_settings(message.chat.id)
+        try:
+            if settings['auto_ffilter']:
+                await auto_filter(client, message)
+        except KeyError:
+            grpid = await active_connection(str(message.from_user.id))
+            await save_group_settings(grpid, 'auto_ffilter', True)
+            settings = await get_settings(message.chat.id)
+            if settings['auto_ffilter']:
+                await auto_filter(client, message) 
     )
     
 
@@ -1011,9 +1014,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
              InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video')          
          ],[
-             InlineKeyboardButton('ᴀᴜᴅɪᴏ ʙᴏᴏᴋ', callback_data='abook'),
-             InlineKeyboardButton('ᴛᴛs', callback_data='tts')
-             ],[
              InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
              InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
              ], [
@@ -1186,21 +1186,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "tts":
-        buttons = [[
-            InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='aswin')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.TTS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     elif query.data == "tele":
         buttons = [[
             InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='aswin')
@@ -1216,22 +1202,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "abook":
-        buttons = [[
-            InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='aswin')
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOOK_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    
     elif query.data == "pings":
         buttons = [[
             InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='aswin')
