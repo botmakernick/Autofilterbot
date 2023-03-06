@@ -71,7 +71,6 @@ async def give_filter(client, message):
             settings = await get_settings(message.chat.id)
             if settings['auto_ffilter']:
                 await auto_filter(client, message) 
-    )
     
 
 @Client.on_callback_query(filters.regex(r"^next"))
